@@ -15,8 +15,8 @@ INSERT INTO ventas (id_venta, producto,cantidad, precio_unitario) VALUES
 (3, 'Producto C',8, 20.00),
 (4, 'Producto D',2, 12.25);
 
-SELECT COUNT (id_venta) AS total_ventas FROM ventas;
+SELECT count(cantidad) AS total_ventas FROM ventas;
 
-SELECT SUM (cantidad) AS total_cantidad_vendida FROM ventas;
+SELECT sum(cantidad) AS total_cantidad_vendida FROM ventas;
 
-SELECT AVG (precio_unitario) AS precio_promedio FROM ventas;
+SELECT avg(precio_unitario) AS precio_promedio FROM ventas;
